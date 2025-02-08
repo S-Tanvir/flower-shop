@@ -6,21 +6,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
+                
+                  <!-- lato font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+                    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .lato-font {
+  font-family: "Lato", serif;
+
+}
+
+    .width{
+        max-width: 1900px;
+        margin: 0 auto;
+    }
+
+    .section-width{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+   
+    </style>
+
+
 </head>
 
 
-<body>
+<body >
 
-    <header>
+    <header class="bg-[#e5547327] width">
+
+
+                                 <!-- banner section -->
+
+        <section class="banner-section section-width flex justify-between items-center pt-10">
+
+
+            <div class="banner-left ">
+                <h1 class="banner-title lato-font text-7xl font-extrabold text-[#272727]">Let's make <br> beautiful flowers a <br> part of your life.</h1>
+                <p class="banner-description lato-font text-lg text-[#2727278f] mt-6 flex flex-wrap">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout. The point of using Lorem Ipsum is <br> that it has a more-or-less normal distribution of letters.</p>
+                <button class="banner-button lato-font bg-[#E55473] text-white px-8 py-4 font-bold text-xl rounded-lg mt-6">Shop Now</button>
+            </div>
+
+
+            <div class="banner-right ">
+                <img src="Flower Asset/pngwing 10.png" alt="">
+            </div>
+        </section>
 
     </header>
 
     <main>
 
+                                           <!-- featured section -->
+
+        <section class="featured-section section-width mt-32">
+
+            <h1 class="feature-title lato-font font-extrabold text-4xl text-[#272727] text-center">Our Featured Flowers</h1>
+            <p class="feature-description text-lg text-[#2727276f] text-center mt-4">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
+
+            <div class="feature-cards-container mt-14 flex  justify-between gap-32">
+
+
+                <div class="feature-card w-1/3 ">
+                    <img class="f-card bg-[#a7216234] px-16 pt-32 rounded-t-full" src="Flower Asset/pngwing 6.png" alt="">
+                    <h3 class="text-2xl font-bold lato-font mt-5 underline text-center ">Pink Flower Tree</h3>
+                </div>
+                <div class="feature-card w-1/3">
+                    <img class="f-card bg-[#0598a023] px-16 pt-32 rounded-t-full" src="Flower Asset/pngwing 6.png" alt="">
+                    <h3 class="text-2xl font-bold lato-font mt-5 underline text-center">Pink Flower Tree</h3>
+                </div>
+                <div class="feature-card w-1/3">
+                    <img class="f-card bg-[#477d1123] px-16 pt-32 rounded-t-full" src="Flower Asset/pngwing 6.png" alt="">
+                    <h3 class="text-2xl font-bold lato-font mt-5 underline text-center">Pink Flower Tree</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="section-width mt-32 bg-[#2727270c] py-32 px-20 rounded-lg">
+
+            <div class="flex justify-between items-center gap-20">
+                <div class="w-1/3">
+                    <img class=" mx-auto" src="Flower Asset/Group 57.png" alt="">
+                    <p class="lato-font font-semibold text-2xl text-[#272727ad] mt-5 text-center">Same Day Delivery. Click & Collect.</p>
+                </div>
+                <div class="w-1/3">
+                    <img class=" mx-auto" src="Flower Asset/Group 58.png" alt="">
+                    <p class="lato-font font-semibold text-2xl text-[#272727ad] mt-5 text-center">Fresh Flowers. Local Growers.</p>
+                </div>
+                <div class="w-1/3">
+                    <img class=" mx-auto" src="Flower Asset/Group 59.png" alt="">
+                    <p class="lato-font font-semibold text-2xl text-[#272727ad] mt-5 text-center">24/7 Free Support.</p>
+                </div>
+               
+            </div>
+
+        </section>
+                                                   <!-- hot deal section -->
+
+        <section class="bg-[#e5547327] width mt-32" >
+            <section class="hot-deal-section section-width flex justify-around items-center py-36">
+
+
+                <div class="hot-deal text-center">
+                    <h1 class="hot-deal-title lato-font text-5xl font-extrabold text-[#272727]">Hot Deal ! Sale Up To 25% <span class="text-[#E55473]">Off</span></h1>
+                    <p class="hot-deal-description lato-font text-lg text-[#2727278f] mt-6 ">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
+                    <button class="hot-deal-button lato-font bg-[#E55473] text-white px-8 py-4 font-bold text-xl rounded-lg mt-6">Sign Up</button>
+                </div>
+    
+    
+                <div class="banner-right ">
+                    <img src="Flower Asset/pngwing 8.png" alt="">
+                </div>
+            </section>
+        </section>
+                                               <!-- instagram section -->
+        <section class="instagram-section section-width mt-32">
+
+            <h1 class="lato-font font-extrabold text-5xl text-[#272727] text-center">Instagram</h1>
+            <p class="text-[#2727278a] text-center mt-5 text-lg">It is a long established fact that a reader will be distracted by the readable <br>content of a page when looking at its layout.</p>
+
+            <div class="flex justify-between mt-10">
+                <img src="Flower Asset/Flower 01.png" alt="">
+                <img src="Flower Asset/Rectangle 4.png" alt="">
+                <img src="Flower Asset/Rectangle 5.png" alt="">
+                <img src="Flower Asset/Rectangle 6.png" alt="">
+            </div>
+
+        </section>
+
+
+                                         <!-- latest deal -->
+       <section class="latest-deal-section section-width  mt-32 ">
+
+        <img class="section-widthrelative -z-10" src="Flower Asset/Rectangle 9.png" alt="">
+
+                                         
+        <section class="latest-deal-written  section-width -mt-80 ">
+            <h1 class="text-center lato-font font-extrabold text-5xl text-[#272727]">Get The Latest Deals</h1>
+            <p class="text-center lato-font text-[#2727278d] mt-5 text-lg">$30 coupon for first shopping</p>
+
+            <div class=" flex justify-center items-center mt-10 gap-4 ">
+                <input class="px-5  w-3/6 py-5 mt-6 rounded-lg" type="email" name="" id="" placeholder="Enter your email here....">
+                <button class="hot-deal-button lato-font bg-[#E55473] text-white px-8 py-4 font-bold text-xl rounded-lg mt-6">Subscribe</button>
+            </div>
+
+        </section>
+       </section>
+
     </main>
 
     <footer>
+
+        <section class="footer-section width bg-[#111010] mt-52 text-center py-24">
+
+            <h1 class="lato-font text-5xl font-extrabold"><span class="text-[#E55473]">Flower</span><span class="text-white">Shop</span></h1>
+            <p class="text-[#ffffffc0] lato-font text-lg mt-5">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
+
+            <p class="text-[#ffffff6d] lato-font mt-5">@2020-2023, FlowerShop.com. All rights reserved. </p>
+
+        </section>
 
     </footer>
     
